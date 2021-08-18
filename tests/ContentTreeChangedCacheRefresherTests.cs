@@ -1,4 +1,3 @@
-using Our.Umbraco.CacheRefresher.Tests.Common.Fixtures;
 
 namespace Our.Umbraco.CacheRefresher.Tests;
 
