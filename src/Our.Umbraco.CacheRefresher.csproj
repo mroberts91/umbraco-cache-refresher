@@ -1,10 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
 	<LangVersion>10.0</LangVersion>
 	<Nullable>enable</Nullable>
+	<Product>Our.Umbraco.CacheRefresher</Product>
+	<Title>Our.Umbraco.CacheRefresher</Title>
+	<RootNamespace>Our.Umbraco.CacheRefresher</RootNamespace>
+	<AssemblyName>Our.Umbraco.CacheRefresher</AssemblyName>
+	<Version>0.0.0</Version>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
+
+  <PropertyGroup>
+  	<PackageId>Our.Umbraco.CacheRefresher</PackageId>
+  	<RepositoryType>git</RepositoryType>
+  	<RepositoryUrl>https://github.com/mroberts91/umbraco-cache-refresher</RepositoryUrl>
+  </PropertyGroup>
+
+  <Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
+  	<PropertyGroup>
+  		<PackageDescription>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../../RELEASE-NOTES"))</PackageDescription>
+  	</PropertyGroup>
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms.Core" Version="9.0.0-rc002" />
