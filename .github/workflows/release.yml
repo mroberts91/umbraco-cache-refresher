@@ -20,6 +20,10 @@ jobs:
       run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
     - name: Add Umbraco Pre-release NuGet
       run: dotnet nuget add source https://www.myget.org/F/umbracoprereleases/api/v3/index.json -n UmbracoPrereleases
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+        include-prerelease: true
     - name: Build
       run: dotnet build --configuration Release /p:Version=${VERSION}
     - name: Test
