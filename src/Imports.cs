@@ -1,0 +1,17 @@
+﻿global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Options;
+global using Microsoft.Extensions.Configuration;
+global using Our.Umbraco.CacheRefresher.Abstractions;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading;
+global using System.Threading.Tasks;
+global using Umbraco.Cms.Core;
+global using Umbraco.Cms.Core.DependencyInjection;
+global using Umbraco.Cms.Core.Events;
+global using Umbraco.Cms.Core.Models;
+global using Umbraco.Cms.Core.Notifications;
+global using Umbraco.Cms.Core.Services.Changes;
+global using Umbraco.Extensions;
