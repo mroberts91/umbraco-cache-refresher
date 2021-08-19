@@ -34,7 +34,7 @@ jobs:
     - name: Push to GitHub Feed
       run: dotnet nuget push Our.Umbraco.CacheRefresher.${VERSION}.nupkg --source https://nuget.pkg.github.com/mroberts91/index.json --api-key ${GITHUB_TOKEN}
     - name: Push to NuGet Feed
-      run: dotnet nuget push Our.Umbraco.CacheRefresher.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key {NUGET_TOKEN}
+      run: dotnet nuget push Our.Umbraco.CacheRefresher.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
