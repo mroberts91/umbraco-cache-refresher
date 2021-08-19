@@ -6,7 +6,7 @@
 
 # Our.Umbraco.CacheRefresher
 
-This packaged is designed to add types that extend the new Umbraco v9+ event aggregator
+This package is designed to add types that extend the new Umbraco v9+ event aggregator
 pattern, allowing application code that manages it's own caches to hook into
 core Umbraco events and invalidate or updated those caches triggered via
 a notification event.
