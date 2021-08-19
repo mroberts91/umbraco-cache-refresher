@@ -1,0 +1,31 @@
+name: Build (dev)
+on:
+  push:
+    branches:
+    - dev
+    paths:
+      - src/**
+      - tests/**
+  pull_request:
+    branches:
+    - main
+    paths:
+      - src/**
+      - tests/**
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+        include-prerelease: true
+    - name: Add Umbraco Pre-release NuGet
+      run: dotnet nuget add source https://www.myget.org/F/umbracoprereleases/api/v3/index.json -n UmbracoPrereleases
+    - name: Build
+      run: dotnet build --configuration Release
+    - name: Test
+      run: dotnet test --configuration Release --no-build
