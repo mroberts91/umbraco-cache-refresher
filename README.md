@@ -72,3 +72,5 @@ internal sealed class TestCacheRefresher : ContentTreeChangedCacheRefresher
     }
 }
 ```
+
+_"Icon made by ultimatearm from www.flaticon.com"_
