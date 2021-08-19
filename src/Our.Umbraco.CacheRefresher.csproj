@@ -26,7 +26,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-  	<None Include="..\..\assets\icon-64.png">
+  	<None Include="..\assets\icon-64.png">
   		<Pack>True</Pack>
   		<PackagePath></PackagePath>
   	</None>
