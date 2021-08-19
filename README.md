@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/mroberts91/umbraco-cache-refresher)
 ![GitHub](https://img.shields.io/github/license/mroberts91/umbraco-cache-refresher)  
 
-# Our.Umbraco.CacheRefresher
+# ![CacheRefresher Logo](https://github.com/mroberts91/umbraco-cache-refresher/blob/8b4650ef83c9fbc140c5cbac0a3b29cf9ab8cd37/assets/icon-64.png) Our.Umbraco.CacheRefresher
 
 This package is designed to add types that extend the new Umbraco v9+ event aggregator
 pattern, allowing application code that manages it's own caches to hook into
@@ -72,3 +72,5 @@ internal sealed class TestCacheRefresher : ContentTreeChangedCacheRefresher
     }
 }
 ```
+
+_"Icon made by ultimatearm from www.flaticon.com"_
