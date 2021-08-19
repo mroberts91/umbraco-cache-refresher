@@ -1,5 +1,5 @@
 [![Build (main)](https://github.com/mroberts91/umbraco-cache-refresher/actions/workflows/ci.yml/badge.svg)](https://github.com/mroberts91/umbraco-cache-refresher/actions/workflows/ci.yml)
-![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/mroberts91/umbraco-cache-refresher?include_prereleases)
+![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/Our.Umbraco.CacheRefresher)
 ![Umbraco Version Support](https://img.shields.io/badge/Umbraco-9%2B-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mroberts91/umbraco-cache-refresher)
 ![GitHub](https://img.shields.io/github/license/mroberts91/umbraco-cache-refresher)  
