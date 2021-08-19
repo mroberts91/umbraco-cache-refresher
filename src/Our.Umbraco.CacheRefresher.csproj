@@ -16,18 +16,21 @@
   	<PackageId>Our.Umbraco.CacheRefresher</PackageId>
   	<RepositoryType>git</RepositoryType>
   	<RepositoryUrl>https://github.com/mroberts91/umbraco-cache-refresher</RepositoryUrl>
+	<PackageIcon>icon-64.png</PackageIcon>
+    <PackageDescription>
+	    This package is designed to add types that extend the new Umbraco v9+ event aggregator
+	    pattern, allowing application code that manages it's own caches to hook into
+	    core Umbraco events and invalidate or updated those caches triggered via
+	    a notification event.
+    </PackageDescription>
   </PropertyGroup>
 
-  <Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
-  	<PropertyGroup>
-  		<PackageDescription>
-			This package is designed to add types that extend the new Umbraco v9+ event aggregator
-			pattern, allowing application code that manages it's own caches to hook into
-			core Umbraco events and invalidate or updated those caches triggered via
-			a notification event.
-		</PackageDescription>
-  	</PropertyGroup>
-  </Target>
+  <ItemGroup>
+  	<None Include="..\..\assets\icon-64.png">
+  		<Pack>True</Pack>
+  		<PackagePath></PackagePath>
+  	</None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms.Core" Version="9.0.0-rc002" />
