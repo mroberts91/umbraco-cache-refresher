@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Core" Version="9.0.0-rc002" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="9.0.1" />
   </ItemGroup>
 
 </Project>
